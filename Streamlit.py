@@ -16,7 +16,7 @@ reg_model = load_pickle("GokulGowthamS/Clickstream-customer-conversion/Pickles/b
 clust_model = load_pickle("GokulGowthamS/Clickstream-customer-conversion/Pickles/best_model_clust.pkl")
 
 try:
-    preprocessor = load_pickle("F:\\Guvi Projects\\Clickstream - Customer Conversion\\Pickles\\preprocessed_data.pkl")
+    preprocessor = load_pickle("GokulGowthamS/Clickstream-customer-conversion/Pickles/preprocessed_data.pkl")
 except Exception as e:
     st.warning(f"Could not load preprocessor: {e}")
     preprocessor = None
