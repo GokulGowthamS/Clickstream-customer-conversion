@@ -11,9 +11,9 @@ def load_pickle(file_path):
     with open(file_path, 'rb') as file:
         return pickle.load(file)
     
-class_model = load_pickle("F:\\Guvi Projects\\Clickstream - Customer Conversion\\Pickles\\best_model_class.pkl")
-reg_model = load_pickle("F:\\Guvi Projects\\Clickstream - Customer Conversion\\Pickles\\best_model_reg.pkl")
-clust_model = load_pickle("F:\\Guvi Projects\\Clickstream - Customer Conversion\\Pickles\\best_model_clust.pkl")
+class_model = load_pickle("GokulGowthamS/Clickstream-customer-conversion/Pickles/best_model_class.pkl")
+reg_model = load_pickle("GokulGowthamS/Clickstream-customer-conversion/Pickles/best_model_reg.pkl")
+clust_model = load_pickle("GokulGowthamS/Clickstream-customer-conversion/Pickles/best_model_clust.pkl")
 
 try:
     preprocessor = load_pickle("F:\\Guvi Projects\\Clickstream - Customer Conversion\\Pickles\\preprocessed_data.pkl")

@@ -5,7 +5,7 @@ import os
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
-data = pd.read_csv("F:\\Guvi Projects\\Clickstream - Customer Conversion\\Preprocessed_Data\\cleaned_data.csv")
+data = pd.read_csv("GokulGowthamS/Clickstream-customer-conversion/Preprocessed_Data/cleaned_data.csv")
 
 drop_columns = ['year', 'session_id', 'page2_clothing_model']
 data.drop(columns=drop_columns, errors='ignore', inplace=True)
@@ -37,7 +37,7 @@ preprocessor = ColumnTransformer(
 X = data.drop(columns=['high_price_preference'], errors='ignore')  # Exclude target variable
 preprocessor.fit(X)
 
-processed_csv_path = "F:\\Guvi Projects\\Clickstream - Customer Conversion\\Preprocessed_Data"
+processed_csv_path = "GokulGowthamS/Clickstream-customer-conversion/Preprocessed_Data"
 
 os.makedirs(processed_csv_path, exist_ok=True)
 
@@ -47,7 +47,7 @@ data.to_csv(processed_csv_file, index=False)
 
 print(f"Processed data saved successfully at '{processed_csv_file}'")
 
-preprocessed_data_path = "F:\\Guvi Projects\\Clickstream - Customer Conversion\\Pickles"
+preprocessed_data_path = "GokulGowthamS/Clickstream-customer-conversion/Pickles"
 
 os.makedirs(preprocessed_data_path, exist_ok=True)
 
